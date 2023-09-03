@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Montserrat:wght@300;400&family=Open+Sans:wght@600&family=Raleway&family=Roboto&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+#clothing-section, #accessory-section{
+   display: flex;
+   flex-wrap: wrap;
+   /* border: 1px solid black; */
+   justify-content: center;
+   padding: 0 4%;
+}
+
+.product-card{
+    width: 15%;
+    margin: 30px 10px;
+    cursor: pointer;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgb(0,0,0,0.3);
+}
+.product-image{
+    width: 100%;
+}
+.product-name{
+    margin: 10px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    color: rgb(27, 25, 25);
+}
+.product-brand{
+    margin: 10px;
+    text-align: left;
+    font-size: 12px;
+    color: rgb(110, 110, 110);
+}
+.product-price{
+    margin: 10px;
+    text-align: left;
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: #009688;
+}
+
+.product-details{
+    padding: 0px;
+    padding-top: 10px;
+}
+.section-details{
+    margin-left: 70px;
+}
+
+@media (max-width: 718px) {
+    .product-card{
+        width: calc(50% - 60px);
+    }
+}
+
